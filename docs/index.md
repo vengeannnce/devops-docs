@@ -1,0 +1,16 @@
+cat > docs/index.md << 'EOF'
+# DevOps Operations Handbook
+
+Учебный сайт документации, собираемый из Markdown и публикуемый через GitHub Actions.
+
+**Версия: 1.** Этот маркер используется при исследовании неудачного выпуска.
+
+## Контур поставки
+
+1. Изменение предлагается через Pull Request.
+2. Pylint проверяет Python-код.
+3. После слияния в `main` MkDocs собирает статический сайт.
+4. GitHub Pages публикует артефакт сборки.
+
+Адрес будущего сайта: `https://vengeannnce.github.io/devops-docs/`.
+EOF
